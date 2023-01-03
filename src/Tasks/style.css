@@ -1,0 +1,33 @@
+.list__tasks {
+    padding: 0px;
+    margin-top: 2px;
+}
+
+.list__task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    word-break: break-word;
+    grid-gap: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.list__task--done {
+    text-decoration: line-through;
+}
+
+.list__button-hideDone, .list__button-hideAll {
+    border: 0;
+    text-decoration: none;
+    color: #008080;
+    padding: 0px;
+    background-color: white;
+    transition: 1s;
+}
+
+.list__button-hideDone:hover, .list__button-hideAll:hover {
+    color: hsl(180, 100%, 35%);
+}

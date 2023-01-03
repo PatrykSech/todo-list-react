@@ -1,0 +1,28 @@
+.header {
+    padding: 10px 0px;
+}
+
+.header--secondary {
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 20px;
+    margin: 10px 0px 0px;
+}
+
+.container {
+    margin-top: 2px;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.container__events {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.div {
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(204, 204, 204, 1);
+    box-shadow: 0px 0px 25px 0px rgba(204, 204, 204, 1);
+}
