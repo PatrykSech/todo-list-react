@@ -1,22 +1,23 @@
-.container__form {
-    margin-top: 2px;
-    background-color: #fff;
-    padding: 15px 20px;
-    font-weight: 500;
-}
-
-.tasks__form {
+.form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 15px;
 }
 
-.tasks__input {
+@media (max-width: 767px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
+
+.form__input {
     border: 1px solid #ddd;
     padding: 10px 15px;
 }
 
-.tasks__button {
+.form__button {
     border: none;
     background-color: teal;
     padding: 11px 20px;
@@ -24,46 +25,7 @@
     transition: 0.5s;
 }
 
-.tasks__button:hover {
+.form__button:hover {
     transform: scale(1.05);
     background-color: hsl(180, 100%, 30%);
-}
-
-.task_button-done {
-    background-color: hsl(120, 61%, 34%);
-    width: 30px;
-    height: 30px;
-    border: none;
-    color: #fff;
-    transition: 1s;
-}
-
-.task_button-done:hover {
-    background-color: hsl(120, 61%, 44%);
-    width: 30px;
-    height: 30px;
-    border: none;
-}
-
-.task__button-remove {
-    background-color: hsl(348, 83%, 52%);
-    width: 30px;
-    height: 30px;
-    border: none;
-    transition: 1s;
-}
-
-.task__button-remove:hover {
-    background-color: hsl(348, 83%, 42%);
-    width: 30px;
-    height: 30px;
-    border: none;
-}
-
-@media (max-width: 767px) {
-    .tasks__form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-    }
 }

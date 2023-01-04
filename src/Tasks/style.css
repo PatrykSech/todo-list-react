@@ -31,3 +31,34 @@
 .list__button-hideDone:hover, .list__button-hideAll:hover {
     color: hsl(180, 100%, 35%);
 }
+
+.task_button-done {
+    background-color: hsl(120, 61%, 34%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    transition: 1s;
+}
+
+.task_button-done:hover {
+    background-color: hsl(120, 61%, 44%);
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.task__button-remove {
+    background-color: hsl(348, 83%, 52%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    transition: 1s;
+}
+
+.task__button-remove:hover {
+    background-color: hsl(348, 83%, 42%);
+    width: 30px;
+    height: 30px;
+    border: none;
+}

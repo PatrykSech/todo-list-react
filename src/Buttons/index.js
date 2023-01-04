@@ -2,11 +2,11 @@ import "./style.css"
 
 const Buttons = ({ tasks, hideDoneTasks }) => (
     tasks.length > 0 && (
-        <div className="container__event--buttons">
-            <button className={`evenButton--left`}>
+        <div className="buttons">
+            <button className={`buttons__button`}>
                 {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button className="evenButton--right"
+            <button className="buttons__button"
                 disabled={tasks.every(({done}) => done)}>
                 Ukończ wszytskie
             </button>
