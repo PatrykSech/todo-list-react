@@ -13,7 +13,7 @@ function App() {
   ]);
 
   const toggleHideDone = () => {
-    setHideDone(hideDone = !hideDone);
+    setHideDone(hideDone => !hideDone);
   };
 
   const removeTask = (id) => {
