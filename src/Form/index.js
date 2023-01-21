@@ -6,12 +6,20 @@ const Form = ({ addNewTask }) => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        addNewTask(newTaskContent.trim());
-        setNewTaskContent("");
+        if (newTaskContent === "") {
+            return;
+        }
+        setNewTaskContent("")
+
+        if (newTaskContent.length !== 0) {
+            addNewTask(newTaskContent.trim());
+        };
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
+        <form
+         className="form"
+         onSubmit={onFormSubmit}>
             <input
                 value={newTaskContent}
                 className="form__input"
