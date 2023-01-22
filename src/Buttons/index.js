@@ -5,7 +5,8 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setTasksDone }) => (
         <div className="buttons">
             <button
                 onClick={toggleHideDone}
-                className={`buttons__button`}>
+                className={`buttons__button`}
+                >
                 {hideDone ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button
