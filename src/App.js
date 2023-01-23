@@ -22,10 +22,10 @@ function App() {
   };
   
   const setTasksDone = () => {
-    tasks = tasks.map((task) => ({
+    setTasks(tasks => tasks.map((task) => ({
       ...task,
       done: true,
-    }));
+    })));
   };
 
   const removeTask = (id) => {
