@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components";
 
-export const List = styled.ul`
+export const Container = styled.ul`
     padding: 0px;
     margin-top: 2px;
 `
