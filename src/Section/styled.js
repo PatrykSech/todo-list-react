@@ -27,7 +27,7 @@ export const Header = styled.div`
     background-color: ${({ theme }) => theme.color.white};
     margin-top: 20px;
 
-@media (max-width: ${({ theme }) => theme.breakpoint.white}px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
