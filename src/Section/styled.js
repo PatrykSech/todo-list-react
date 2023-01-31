@@ -7,14 +7,14 @@ export const SectionContainer = styled.section`
 `
 export const SectionBody = styled.div`
     margin-top: 2px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     padding: 15px 20px;
     font-weight: 500;
 `
 
 export const SectionHeader = styled.h2`
     padding: 15px 20px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     font-size: 20px;
     margin: 10px 0px 0px;
 `
@@ -24,10 +24,10 @@ export const SectionContents = styled.div`
     grid-template-columns: 1fr auto auto;
     align-items: center;
     grid-gap: 5px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     margin-top: 20px;
 
-@media (max-width: 767px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;

@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     border: none;
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     transition: 1s;
     padding: 15px 15px;
 
     &:hover {
-        color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
     }
 
     &:disabled {
-        color: grey;
+        color: ${({ theme }) => theme.color.silver}
     }
 
-    @media (max-width: 767px){
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;

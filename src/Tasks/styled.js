@@ -12,8 +12,8 @@ export const Item = styled.li`
     word-break: break-word;
     grid-gap: 20px;
     padding: 10px 15px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: ${({ theme }) => theme.color.white};
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     margin-bottom: 5px;
 
     ${({hidden}) => hidden && css`
@@ -32,22 +32,22 @@ export const Button = styled.button`
     height: 30px;
     padding: 0;
     border: none;
-    color: #fff;
-    transition: background 1s;
+    color: ${({ theme }) => theme.color.white};
+    transition: filter 1s;
 
     ${({toggleDone}) => toggleDone && css`
-        background: hsl(120, 61%, 34%);
+        background: ${({ theme }) => theme.color.forestGreen};
 
         &:hover {
-            background: hsl(120, 61%, 39%);
+            filter: brightness(120%);
         }
     `}
 
     ${({remove}) => remove && css`
-        background: hsl(348, 83%, 52%);
+        background: ${({ theme }) => theme.color.crimson};
 
         &:hover {
-            background: hsl(348, 83%, 42%)
+            filter: brightness(80%);
         }
     `}
 
