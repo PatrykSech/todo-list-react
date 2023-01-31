@@ -1,18 +1,17 @@
-import { Container, Render, Header, Event  } from "./styled"
+import { SectionContainer, SectionBody, SectionHeader, SectionContents  } from "./styled"
 
-const Section = ({title, body,
-     extraHeaderContent}) => (
-    <Container>
-        <Event>
-            <Header>
+const Section = ({title, body, extraHeaderContent}) => (
+    <SectionContainer>
+        <SectionContents>
+            <SectionHeader>
                 {title}
-            </Header>
+            </SectionHeader>
             {extraHeaderContent}
-        </Event>
-        <Render>
+        </SectionContents>
+        <SectionBody>
             {body}
-        </Render>
-    </Container>
+        </SectionBody>
+    </SectionContainer>
 );
 
 export default Section; 

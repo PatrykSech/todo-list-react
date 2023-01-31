@@ -22,8 +22,7 @@ const Form = ({ addNewTask }) => {
     };
 
     return (
-        <Container
-         onSubmit={onFormSubmit}>
+        <Container onSubmit={onFormSubmit}>
             <Input
                 value={newTaskContent}
                 ref={inputRef}
