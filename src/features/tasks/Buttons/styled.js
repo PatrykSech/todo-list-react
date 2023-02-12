@@ -19,6 +19,6 @@ export const Button = styled.button`
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
-        padding-bottom: 15px;
+        padding: 10px 0;
     }
 `
