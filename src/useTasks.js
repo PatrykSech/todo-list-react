@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 export const useTasks = () => {
-    const [hideDone, setHideDone] = useState(false);
 
     const localStorageTasks = localStorage.getItem("tasks");
     const [tasks, setTasks] = useState(localStorageTasks ? JSON.parse(localStorageTasks) : []);
@@ -10,9 +9,7 @@ export const useTasks = () => {
       localStorage.setItem("tasks", JSON.stringify(tasks))
     }, [tasks]);
     
-    const toggleHideDone = () => {
-        setHideDone(hideDone => !hideDone);
-      };
+//
       
       const setTasksDone = () => {
         setTasks(tasks => tasks.map((task) => ({
@@ -46,5 +43,5 @@ export const useTasks = () => {
         ]);
       };
 
-      return {tasks, toggleHideDone, setTasksDone, removeTask, toggleTaskDone, addNewTask, hideDone};
+      return {tasks, setTasksDone, removeTask, toggleTaskDone, addNewTask};
 };
