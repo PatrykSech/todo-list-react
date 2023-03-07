@@ -17,7 +17,7 @@ function* saveTasksInLocalStorageHandler() {
     yield call(saveTasksInLocalStorage, tasks)
 }
 
-export function* watchFetchExampleTasks() {
+export function* tasksSaga() {
     console.log("Saga jest podłączona!")
     yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler)
