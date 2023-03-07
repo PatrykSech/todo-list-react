@@ -24,7 +24,7 @@ export const Tittle = styled.h2`
 
 export const Header = styled.div`
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 5px;
     background-color: ${({ theme }) => theme.color.white};
@@ -42,4 +42,8 @@ export const Button = styled.button`
     background-color: transparent;
     font-size: 16px;
     transition: 1s;
+
+    &:hover {
+        filter: brightness(110%);
+    }
 `
