@@ -4,10 +4,11 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import SectionUpper from "../../common/SectionUpper";
 import Header from "../../common/Header";
+import { Main } from "../../styled";
 
 function App() {
   return (
-    <main>
+    <Main>
       <Header title="Lista zadań" />
       <SectionUpper
         title="Dodaj nowe zadanie"
@@ -19,7 +20,7 @@ function App() {
         extraHeaderContent={<Buttons />}
         body={<Tasks />}
       />
-    </main>
+    </Main>
   );
 };
 
