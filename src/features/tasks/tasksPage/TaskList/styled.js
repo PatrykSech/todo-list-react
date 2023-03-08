@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, {css} from "styled-components";
 
 export const Container = styled.ul`
@@ -50,5 +51,14 @@ export const Button = styled.button`
             filter: brightness(80%);
         }
     `}
+`
 
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
+    transition: filter 1s;
+
+    &:hover {
+            filter: brightness(120%);
+        }
 `
