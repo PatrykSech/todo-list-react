@@ -25,6 +25,7 @@ export const NavItem = styled.li`
 
 export const Main = styled.main`
     max-width: 800px;
+    padding: 0 20px;
     margin: auto;
     display: block;
 `

@@ -46,4 +46,8 @@ export const Button = styled.button`
     &:hover {
         filter: brightness(110%);
     }
+
+    &:disabled {
+        color: ${({ theme }) => theme.color.silver}
+    }
 `
